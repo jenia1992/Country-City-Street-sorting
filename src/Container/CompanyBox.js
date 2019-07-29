@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { connect } from "react-redux";
 import * as  actionType from "../Store/action/Index"
 import UlLi from "./UlLi";
+import { keyG } from "../config/keys.js"
 import Geocode from "react-geocode";
     class CompanyBox extends Component {
         state={
@@ -12,7 +13,7 @@ import Geocode from "react-geocode";
         }
         
         onClickHandler(name,address){
-            Geocode.setApiKey("AIzaSyCmaRkdRWNFozLcuoPrbORbRLoojhZp9Vc");
+            Geocode.setApiKey("keyG");
             this.setState({id:name},()=>{
                 
             })
